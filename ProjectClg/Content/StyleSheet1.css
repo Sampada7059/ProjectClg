@@ -1,0 +1,103 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+li, a, .dropdown {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+
+.logo {
+    cursor: pointer;
+    color: #edf0f1;
+    text-align: left;
+    margin-right: 210px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #0039a6;
+    text-decoration: none;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.dropdown {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+textarea {
+}
+
+input[type="submit"] {
+}
+
+
+table {
+    border-color: #0039a6;
+    padding-right: 25%;
+}
+
+td, th {
+    padding: 10px;
+}
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.updates table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #0039a6;
+}
+
+.updates th, td {
+    padding: 8px;
+    
+    border: 1px solid #ddd;
+}
+
+.updates th {
+    background-color: #f2f2f2;
+}
+
+.updates tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.updates tr:hover {
+    background-color: #0088a9;
+}
+
+.form-group input {
+    color: #0039a6;
+}
+
+.form-group input:hover {
+    color: #0088a9;
+}

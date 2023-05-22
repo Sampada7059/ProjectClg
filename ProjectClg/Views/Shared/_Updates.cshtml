@@ -1,0 +1,54 @@
+﻿
+@model ProjectClg.Models.Update
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Updates</title>
+</head>
+<body>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    @using (Html.BeginForm("Update", "Update", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4 style="color: #0039a6;">Enter your updates</h4>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Information, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Information, new { @class = "form-control", placeholder = "Enter your information..." })
+                @Html.ValidationMessageFor(model => model.Information, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreatedAdmin, htmlAttributes: new { style = "display: none;" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CreatedAdmin, new { htmlAttributes = new { style = "display: none;", Value = "Ad001".ToString() } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" style="" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+    }
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<ProjectClg.Models.Proc_GetUpdates_Result>
+@{
+    ViewBag.Title = "Index";
+}
+<html>
+<div>
+    @Html.Partial("_Updates", new ProjectClg.Models.Update())
+</div>
+
+<h4 style="color: #0039a6;">Latest Updates</h4>
+
+<body>
+    
+    <div class="updates">
+        <table>
+            <tr><td>Updated date</td><td>Information</td><td>Created by</td><td>Updated by</td></tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(a => item.UpdatedDate)</td>
+                    <td><b>@Html.DisplayFor(a => item.Information)</b></td>
+                    <td>@Html.DisplayFor(a => item.Createdby)</td>
+                    <td>@Html.DisplayFor(a => item.Updatedby)</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+
+</html>

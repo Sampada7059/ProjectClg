@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18cc0612a3ce448d8c215d6ed877931b" Name="Diagram1">
+        <EntityTypeShape EntityType="CollegeDBModel.Address" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollegeDBModel.Admin" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollegeDBModel.Department" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollegeDBModel.Student" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollegeDBModel.Teacher" Width="1.5" PointX="6" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollegeDBModel.Update" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
+        <AssociationConnector Association="CollegeDBModel.FK_Add" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_Adm" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_AdminId" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_Dep" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_Stdent" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_Teacher" ManuallyRouted="false" />
+        <AssociationConnector Association="CollegeDBModel.FK_Tcher" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
